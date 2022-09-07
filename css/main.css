@@ -1,0 +1,217 @@
+:root{
+    --dark-grey: #373c41;
+    --grey: #111418;
+    --green: #20c997;
+    --gray-l: #6c757d;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:"Roboto", sans-serif;
+    color:#fff;
+}
+
+.side-bar{
+    background-color: var(--grey);
+    color: #fff;
+    width: 260px;
+    position: fixed;
+    padding-top: 330px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    z-index: 6;
+}
+.side-bar ul li a{
+    text-transform: capitalize,;
+    text-decoration: none;
+    color: #fff;
+}
+.side-bar ul li a:hover{
+    color: var(--green);
+}
+.side-bar .menu-list{
+    margin-top: 60px;
+}
+
+.side-bar .menu-list li{
+    margin-bottom: 30px;
+}
+
+.side-bar .icon{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+    padding: 10px;
+}
+.side-bar .icon li{
+    padding: 10px;
+}
+
+
+.main-bar{
+    background-color: var(--gray-l);
+    display: block;
+    padding-left: 260px;
+    z-index: 1;
+    height: 100%;
+    opacity: 1;
+}
+
+.main-bar #welcome{
+    display: block;
+    background-color: var(--dark-grey);
+    min-height: 100vh;
+    text-align: center;
+    padding: 200px 50px;
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#welcome h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#welcome img{
+    position: absolute;
+    display: flex;
+    margin-top: -470px;
+    margin-left: -111px;
+    opacity: 0.3;
+    overflow: hidden;
+    z-index: 2;
+}
+#place{
+    margin-top: 30px;
+    font-size: 25px;
+    
+}
+
+#about-me{
+    display: block;
+    min-height: 100vh;
+    text-align: center;
+}
+.main-bar #about-me .ab{
+    position: absolute;
+    margin-left: 280px;
+    font-size: 140px;
+    text-transform: uppercase;
+    opacity: 0.15;
+    z-index: 3;
+}
+#know{
+    font-family: 'Roboto Condensed';
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+#know::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 6px;
+    margin-left: -320px;
+    bottom: -135px;
+    background-color: #20c997;
+    border-radius: 5px;
+}
+
+#intro{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#name{
+    color: #20c997;
+}
+
+#lorem{
+    font-size: 20px;
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+    line-height: 35px;
+}
+
+#resume{
+    min-height: 100vh;
+    display: block;
+    text-align: center;
+    background-color: var(--dark-grey);
+    z-index: 4;
+}
+.main-bar #resume #rs{
+    font-family: 'Roboto Condensed';
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    padding: 50px;
+}
+#rs::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 4px;
+    margin-left: 480px;
+    margin-top: 0px;
+    background-color: #20c997;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.bg-dark{
+    background-color: var(--grey);
+}
+
+.rounded{
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.badge{
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.text-1{
+    float: left;
+    width: 600px;
+    height: 180px;
+    margin-left: 20px;
+}
+
+.text-5{
+    padding: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.text-primary{
+    font-weight: 500;
+    padding: 5px 5px;
+    color: #20c997;
+}
+
+.text-white-50{
+    float: left;
+    
+    padding: 0 30px;
+    line-height: 25px;
+    text-align: justify;
+    word-spacing: 1px;
+}
